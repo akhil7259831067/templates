@@ -22,11 +22,14 @@ class OpenAIModel:
         self.openai_client = trace_openai(openai.Client())
 
     def create_chat_completion(
-        self, messages: List[Dict[str, str]], stream: bool = False
+        self,
+        messages: List[Dict[str, str]],
+        stream: bool = False,
+        model: str = "gpt-4.1-nano",
     ) -> "openai.types.chat.chat_completion.ChatCompletion":
         """Calls OpenAI chat completion API."""
         return self.openai_client.chat.completions.create(
             messages=messages,
-            model="gpt-3.5-turbo",
+            model=model,
             stream=stream,
         )

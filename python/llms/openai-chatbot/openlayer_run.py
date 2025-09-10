@@ -30,8 +30,12 @@ class OpenAIModelInterface(OpenlayerModel):
     ) -> RunReturn:
         """Method that runs the model on a single row of the dataset
         and returns the result (a `RunReturn` object)."""
+
+        model = self.custom_args.get("model")
+
         response = self.model.create_chat_completion(
-            messages=[{"role": "user", "content": input_data}]
+            messages=[{"role": "user", "content": input_data}],
+            model=model,
         )
         output = response.choices[0].message.content.strip()
         return RunReturn(output=output, other_fields={})
