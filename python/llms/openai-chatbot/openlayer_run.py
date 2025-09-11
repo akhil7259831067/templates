@@ -31,7 +31,7 @@ class OpenAIModelInterface(OpenlayerModel):
         """Method that runs the model on a single row of the dataset
         and returns the result (a `RunReturn` object)."""
 
-        model = self.custom_args.get("model")
+        model = self.custom_args.get("model", "gpt-4.1-nano")
 
         response = self.model.create_chat_completion(
             messages=[{"role": "user", "content": input_data}],
