@@ -1,14 +1,158 @@
 [
     {
-        "input_data": "Who were the founders of Apple?",
-        "ground_truth": "Steve Wozniak, Steve Jobs, and Ronald Wayne"
+      "input_data": "How do I request a replacement debit card?",
+      "ground_truth": "Lock the card and report it in the mobile app under Manage Cards \u2192 Report Lost or Stolen. A replacement debit card arrives in 2\u20135 business days; expedited shipping is available for a fee."
     },
     {
-        "input_data": "When did Apple go public?",
-        "ground_truth": "1980"
+      "input_data": "How long after opening an account will I receive my debit card?",
+      "ground_truth": "After approval, your debit card is mailed within 5\u20137 business days."
     },
     {
-        "input_data": "What's the weather like today?",
-        "ground_truth": "I don't know, I don't have access to weather information."
+      "input_data": "Where can I request an additional credit card?",
+      "ground_truth": "Log in to the mobile app and go to Cards \u2192 Request Additional Card, complete the form, and submit."
+    },
+    {
+      "input_data": "How do I activate my new credit card?",
+      "ground_truth": "Activate instantly in the mobile app or by calling the number on the card sticker."
+    },
+    {
+      "input_data": "How do I change my card PIN?",
+      "ground_truth": "Change your PIN at an ATM or in the mobile app under Manage PIN."
+    },
+    {
+      "input_data": "Why was my card declined?",
+      "ground_truth": "Declines may be caused by exceeding daily limits, entering an incorrect PIN, insufficient funds, or suspected fraud."
+    },
+    {
+      "input_data": "How can I avoid card declines while traveling internationally?",
+      "ground_truth": "Add a travel notice under Card Settings before you travel. Foreign transactions may incur a 3% fee unless your card benefits waive it."
+    },
+    {
+      "input_data": "Do premium cards waive foreign transaction fees?",
+      "ground_truth": "Some premium cards waive the 3% foreign transaction fee; check your card\u2019s benefits guide."
+    },
+    {
+      "input_data": "What is the minimum opening deposit for a checking account?",
+      "ground_truth": "Most checking accounts require a minimum opening deposit of $25 to $100."
+    },
+    {
+      "input_data": "Which features come with checking accounts?",
+      "ground_truth": "Checking includes online bill pay, mobile check deposit, paperless statements, and access to over 15,000 fee\u2011free ATMs."
+    },
+    {
+      "input_data": "What do savings accounts earn and how is interest paid?",
+      "ground_truth": "Savings accounts earn interest calculated daily and paid monthly. Rates vary by balance tier."
+    },
+    {
+      "input_data": "What documents are required to open an account?",
+      "ground_truth": "Provide a government\u2011issued photo ID, Social Security Number, and proof of address. Non\u2011residents need valid visa and immigration documentation."
+    },
+    {
+      "input_data": "Can I open an account online and how long does it take?",
+      "ground_truth": "Yes. Open an account online by selecting Open an Account, uploading your photo ID, and completing an e\u2011signature. The process takes 5\u201310 minutes."
+    },
+    {
+      "input_data": "How do I close my account?",
+      "ground_truth": "Ensure all transactions are settled and the balance is zero, then request closure online or at a branch. You will receive a confirmation email."
+    },
+    {
+      "input_data": "How do I switch to paperless statements?",
+      "ground_truth": "Enable paperless delivery in Documents & Settings. You\u2019ll receive an email when a new monthly statement is ready."
+    },
+    {
+      "input_data": "When are monthly statements generated?",
+      "ground_truth": "Monthly statements are generated on the last business day of each month and can be downloaded as PDFs."
+    },
+    {
+      "input_data": "How do I deposit a check on mobile and when will funds be available?",
+      "ground_truth": "Use Deposit Check in the mobile app to photograph the front and back. Funds are usually available the next business day; the first $225 is available immediately and the remainder clears within two business days."
+    },
+    {
+      "input_data": "What is overdraft protection and how do I enable it?",
+      "ground_truth": "Link a savings account or credit card to automatically cover overdrafts. A small transfer fee may apply."
+    },
+    {
+      "input_data": "How do I pay bills online?",
+      "ground_truth": "Use Bill Pay to add a payee and schedule one\u2011time or recurring payments in online or mobile banking."
+    },
+    {
+      "input_data": "Can I transfer money to another bank and how long does it take?",
+      "ground_truth": "Yes. Link your external account; transfers complete in 1\u20133 business days after micro\u2011deposit verification."
+    },
+    {
+      "input_data": "Are Zelle transfers instant?",
+      "ground_truth": "Eligible Zelle transfers between U.S. accounts typically complete within minutes."
+    },
+    {
+      "input_data": "How do I send an international wire and what are the fees?",
+      "ground_truth": "Submit an international wire in online banking using the recipient\u2019s SWIFT/BIC. Funds typically arrive in 2\u20133 business days and fees are $30\u2013$45."
+    },
+    {
+      "input_data": "What are domestic wire requirements and timing?",
+      "ground_truth": "Domestic wires can be sent during business hours through online banking and typically post the same business day depending on the receiving bank."
+    },
+    {
+      "input_data": "What is the ATM daily withdrawal limit?",
+      "ground_truth": "You can withdraw up to $1,000 per day from ATMs, depending on account type."
+    },
+    {
+      "input_data": "How do I view my credit score?",
+      "ground_truth": "View your FICO score for free in online banking; it updates monthly and does not affect your credit."
+    },
+    {
+      "input_data": "What rewards do credit cards offer?",
+      "ground_truth": "Earn 1.5% cash back on purchases redeemable for travel, statement credits, or gift cards."
+    },
+    {
+      "input_data": "How are APRs determined for credit products?",
+      "ground_truth": "APR varies by credit profile and product. See your cardholder or loan agreement for specific rates."
+    },
+    {
+      "input_data": "How does the bank monitor for fraud?",
+      "ground_truth": "Transactions are monitored 24/7 for unusual activity. Suspicious activity may trigger alerts or a temporary block until confirmed."
+    },
+    {
+      "input_data": "How do I dispute an unauthorized transaction and how long does it take?",
+      "ground_truth": "Open the transaction in the app and select Report an Issue. Investigations usually complete within 10 business days."
+    },
+    {
+      "input_data": "What should I do if I forget my password or get locked out?",
+      "ground_truth": "Use Forgot Password to verify via SMS or email and reset. After five failed login attempts the account locks for security."
+    },
+    {
+      "input_data": "What are customer support hours and accessibility options?",
+      "ground_truth": "Support is available 24/7 by phone or chat. Branches operate Monday\u2013Friday 9 a.m.\u20135 p.m. and Saturday 9 a.m.\u20131 p.m. Accessibility options include screen\u2011reader support and large text modes."
+    },
+    {
+      "input_data": "How does the bank protect my data and how can I manage privacy preferences?",
+      "ground_truth": "Customer data is encrypted in transit and at rest in compliance with the Gramm\u2011Leach\u2011Bliley Act. You can opt out of marketing and third\u2011party sharing in Privacy Settings."
+    },
+    {
+      "input_data": "Where can I find nearby branches and ATMs?",
+      "ground_truth": "Use the Find Us feature in the mobile app to locate nearby branches and ATMs using GPS."
+    },
+    {
+      "input_data": "Are safe deposit boxes available?",
+      "ground_truth": "Yes. Safe deposit boxes are available at select branches with annual rental fees and multiple sizes."
+    },
+    {
+      "input_data": "Does the bank offer currency exchange?",
+      "ground_truth": "Yes. Currency exchange for major currencies is available at select branches with daily updated rates and a service fee."
+    },
+    {
+      "input_data": "Request a debit card replacement (variant phrasing)",
+      "ground_truth": "Report a lost or stolen debit card in the app under Manage Cards. Replacement delivery: 2\u20135 business days; expedited shipping offered."
+    },
+    {
+      "input_data": "Request an additional card (variant)",
+      "ground_truth": "In the mobile app, navigate to Cards \u2192 Request Additional Card and submit the form to add a new card."
+    },
+    {
+      "input_data": "Paperless statements (variant)",
+      "ground_truth": "Turn on paperless statements in Documents & Settings to receive email notifications when new statements are posted."
+    },
+    {
+      "input_data": "Mobile check deposit availability (variant)",
+      "ground_truth": "Deposited checks are typically available next business day; $225 available immediately and the rest within two business days."
     }
-]
+  ]

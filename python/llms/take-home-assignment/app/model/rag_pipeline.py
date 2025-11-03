@@ -22,9 +22,9 @@ class RagPipeline:
         self.openai_client = trace_openai(openai.OpenAI())
 
         self.vectorizer = TfidfVectorizer()
-        with open(CONTEXT_PATH, "r", encoding="utf-8") as file:
-            self.context_sections = file.read().split("%%%")
-        self.tfidf_matrix = self.vectorizer.fit_transform(self.context_sections)
+        with open(CONTEXT_PATH, "r", encoding="utf-8") as file:#reading context.txt file
+            self.context_sections = file.read().split("%%%")#Splits sentences whenever 3 percentatges are seen , into each element in an array
+        self.tfidf_matrix = self.vectorizer.fit_transform(self.context_sections)#Converts each sentence in the array to a vector
 
     # Decorate the functions you'd like to trace with @trace()
     @trace()
@@ -44,11 +44,11 @@ class RagPipeline:
 
         Given the query, returns the most similar context (using TFIDF).
         """
-        query_vector = self.vectorizer.transform([query])
-        cosine_similarities = cosine_similarity(
+        query_vector = self.vectorizer.transform([query])#converts user prompt into a vector in the same vector space as context.txt
+        cosine_similarities = cosine_similarity(#Finsd vectores from context.txt most similar to user prompt vector
             query_vector, self.tfidf_matrix
         ).flatten()
-        most_relevant_idx = np.argmax(cosine_similarities)
+        most_relevant_idx = np.argmax(cosine_similarities)#takes the most similar vector
         contexts = [self.context_sections[most_relevant_idx]]
         return contexts
 
