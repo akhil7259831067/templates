@@ -1,0 +1,9 @@
+{
+    "installCommand": "pip install -r requirements.txt",
+    "runCommand": "python run.py",
+    "name": "Capitalization and Format Check",
+    "description": "Akhil Custom Metric: Checks if the chatbot response starts with a capital letter and ends with proper punctuation (., ?, or !).",
+    "lowerBound": 0,
+    "upperBound": 1
+  }
+  
